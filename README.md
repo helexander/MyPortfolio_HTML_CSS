@@ -9,5 +9,4 @@ This is my first draft portfolio. The project is created with HTML and CSS (util
 - Contact page/section
 
 This is the current wireframe of my portfolio (created with Figma):
--link-
-
+https://www.figma.com/file/G1SH5P86a8aLApM1SLmGsQ/Portfolio-WireFrame?node-id=0%3A1
