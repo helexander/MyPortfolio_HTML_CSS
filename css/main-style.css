@@ -1,10 +1,18 @@
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+}
+
 .nav-progress-bar {
-  background-color: orange;
+  background-color: #71aee4c5;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 4px;
+  height: 6px;
   z-index: 10;
 }
 
