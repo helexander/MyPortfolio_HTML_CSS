@@ -1,10 +1,17 @@
 /* From light to dark colour */
+.js-loading *,
+.js-loading *::before,
+.js-loading *::after {
+  animation-play-state: paused !important;
+}
+
 .hero-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e9ecef;
   font-family: "Avenir Next", Open Sans, sans-serif;
+  padding-bottom: 100px;
 }
 
 .hero-container > p {
