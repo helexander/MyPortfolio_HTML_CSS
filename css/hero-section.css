@@ -9,12 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e9ecef;
+  background-image: url("../images/hero-bg.jpg");
   font-family: "Avenir Next", Open Sans, sans-serif;
   padding-bottom: 100px;
 }
 
-.hero-container > p {
+.hero-container p {
   color: #adb5bd;
   padding-top: 80px;
   font-size: 4em;
