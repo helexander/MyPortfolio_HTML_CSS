@@ -1,4 +1,8 @@
 /* From light to dark colour */
+.navbar {
+  opacity: 0.8;
+}
+
 .navbar-brand {
   font-size: 2rem;
 }
