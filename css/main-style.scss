@@ -1,9 +1,16 @@
+@use "../partials/color_pallete";
+
 .navbar-brand {
 	font-size: 2rem;
 }
 
 .nav-link {
 	font-size: 1.25rem;
+}
+
+.other-section h1 {
+	display: flex;
+	justify-content: center;
 }
 
 .nav-progress-bar {

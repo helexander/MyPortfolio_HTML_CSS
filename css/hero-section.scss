@@ -1,12 +1,15 @@
-.hero-content {
+@import "../partials/color_pallete";
+
+.hero-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: $theme-color-2;
 	font-family: "Avenir Next", Open Sans, sans-serif;
 }
 
-.hero-content > p {
-	color: #adb5bd;
+.hero-container > p {
+	color: $theme-color-5;
 	padding-top: 80px;
 	font-size: 4em;
 	max-width: 80%;
@@ -15,10 +18,11 @@
 
 .special-link {
 	font-family: "Avenir Next", Open Sans, sans-serif;
-	color: #212529;
+	color: $theme-color-9;
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
+	z-index: 10;
 
 	&::before {
 		border-top: 0.4em solid #fff300;
@@ -32,7 +36,7 @@
 	}
 
 	&:hover {
-		color: #343a40;
+		color: $theme-color-8;
 		text-decoration: none;
 
 		&::before {

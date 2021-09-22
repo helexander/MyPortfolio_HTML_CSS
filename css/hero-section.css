@@ -1,11 +1,13 @@
-.hero-content {
+/* From light to dark colour */
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e9ecef;
   font-family: "Avenir Next", Open Sans, sans-serif;
 }
 
-.hero-content > p {
+.hero-container > p {
   color: #adb5bd;
   padding-top: 80px;
   font-size: 4em;
@@ -19,6 +21,7 @@
   display: inline-block;
   position: relative;
   text-decoration: none;
+  z-index: 10;
 }
 .special-link::before {
   border-top: 0.4em solid #fff300;
@@ -31,7 +34,7 @@
   z-index: -1;
 }
 .special-link:hover {
-  color: #343a40;
+  color: #353a40;
   text-decoration: none;
 }
 .special-link:hover::before {
