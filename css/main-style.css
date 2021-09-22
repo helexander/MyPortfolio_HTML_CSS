@@ -26,3 +26,17 @@
   height: 2200px;
   width: 100%;
 }
+
+/* Footer section styling */
+.footer-container {
+  height: 100px;
+  background-color: #495057;
+}
+
+.footer-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f9fa;
+}
