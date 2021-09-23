@@ -1,20 +1,21 @@
 @import "../partials/color_pallete";
 
+/* Navigation Bar */
 .navbar {
 	opacity: 0.8;
 }
 
 .navbar-brand {
 	font-size: 2rem;
+	font-weight: 200;
+}
+
+.nav__bold-first-name {
+	font-weight: 800;
 }
 
 .nav-link {
 	font-size: 1.25rem;
-}
-
-.other-section h1 {
-	display: flex;
-	justify-content: center;
 }
 
 .nav-progress-bar {
@@ -27,15 +28,29 @@
 	z-index: 10;
 }
 
-.long-section {
-	height: 2200px;
-	width: 100%;
+/* Body Section */
+
+.section {
+	&__about {
+	}
+
+	&__tech-stack {
+	}
+
+	&__projects {
+	}
+
+	&__contact {
+	}
 }
 
 /* Footer section styling */
 .footer-container {
 	height: 100px;
 	background-color: $theme-color-7;
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
 }
 
 .footer-text {

@@ -1,4 +1,5 @@
 /* From light to dark colour */
+/* Assuring animated items are playing before loading screen */
 .js-loading *,
 .js-loading *::before,
 .js-loading *::after {
@@ -7,23 +8,34 @@
 
 .hero-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("../images/hero-bg.jpg");
+  justify-content: space-evenly;
   font-family: "Avenir Next", Open Sans, sans-serif;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
-
+.hero-container__left {
+  width: 400px;
+}
 .hero-container p {
   color: #adb5bd;
-  padding-top: 160px;
-  font-size: 4em;
+  font-size: 2em;
   max-width: 80%;
-  text-align: center;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 180px;
+  filter: grayscale(100%);
+  filter: gray;
+}
+.profile-pic:hover {
+  filter: none;
 }
 
 .special-link {
   font-family: "Avenir Next", Open Sans, sans-serif;
+  font-size: 2em;
   color: #212529;
   display: inline-block;
   position: relative;
@@ -48,4 +60,22 @@
   border-width: 1.1em;
   bottom: 0.25em;
   transition: all 0.3s cubic-bezier(0, 1.5, 0.5, 1);
+}
+
+.container__button_socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Styling of font-awesome icons */
+.fa-linkedin {
+  color: #212529;
+}
+.fa-github-square {
+  color: #212529;
+}
+
+.fa-chevron-down {
+  color: #f8f9fa;
 }
