@@ -9,17 +9,22 @@
 
 .hero-container {
 	display: flex;
-	background-image: url("../images/hero-bg.jpg");
 	justify-content: space-evenly;
 	font-family: "Avenir Next", Open Sans, sans-serif;
 	padding-top: 80px;
 	padding-bottom: 30px;
+	height: 800px;
 
 	&__left {
-		width: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 650px;
 	}
 
 	&__right {
+		display: flex;
+		align-items: center;
 	}
 }
 
@@ -30,8 +35,8 @@
 }
 
 .profile-pic {
-	height: 200px;
-	width: 180px;
+	height: 350px;
+	width: 350px;
 	filter: grayscale(100%);
 	filter: gray;
 
@@ -50,7 +55,7 @@
 	z-index: 10;
 
 	&::before {
-		border-top: 0.4em solid #fff300;
+		border-top: 0.4em solid $theme-secondary-color-1;
 		bottom: 0.01em;
 		content: "";
 		left: -0.05em;
@@ -72,19 +77,23 @@
 	}
 }
 
-.container {
-	&__button_socials {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-}
-
 .button {
+	&__get-in-touch {
+		border-radius: 290486px;
+		margin-bottom: 10px;
+		width: 30%;
+	}
 	&__social-github {
 	}
 
 	&__social-linkedin {
+	}
+}
+
+.container {
+	&__button_socials {
+		display: flex;
+		padding-right: 20px;
 	}
 }
 
@@ -94,11 +103,16 @@
 	color: $theme-color-9;
 
 	&:hover {
+		color: $theme-color-1;
 	}
 }
 
 .fa-github-square {
 	color: $theme-color-9;
+
+	&:hover {
+		color: $theme-color-1;
+	}
 }
 
 .fa-chevron-down {

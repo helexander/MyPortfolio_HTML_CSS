@@ -8,15 +8,23 @@
 
 .hero-container {
   display: flex;
-  background-image: url("../images/hero-bg.jpg");
   justify-content: space-evenly;
   font-family: "Avenir Next", Open Sans, sans-serif;
   padding-top: 80px;
   padding-bottom: 30px;
+  height: 800px;
 }
 .hero-container__left {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 650px;
 }
+.hero-container__right {
+  display: flex;
+  align-items: center;
+}
+
 .hero-container p {
   color: #adb5bd;
   font-size: 2em;
@@ -24,8 +32,8 @@
 }
 
 .profile-pic {
-  height: 200px;
-  width: 180px;
+  height: 350px;
+  width: 350px;
   filter: grayscale(100%);
   filter: gray;
 }
@@ -43,7 +51,7 @@
   z-index: 10;
 }
 .special-link::before {
-  border-top: 0.4em solid #fff300;
+  border-top: 0.4em solid #71aee4c5;
   bottom: 0.01em;
   content: "";
   left: -0.05em;
@@ -62,18 +70,29 @@
   transition: all 0.3s cubic-bezier(0, 1.5, 0.5, 1);
 }
 
+.button__get-in-touch {
+  border-radius: 290486px;
+  margin-bottom: 10px;
+  width: 30%;
+}
 .container__button_socials {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  padding-right: 20px;
 }
 
 /* Styling of font-awesome icons */
 .fa-linkedin {
   color: #212529;
 }
+.fa-linkedin:hover {
+  color: #f8f9fa;
+}
+
 .fa-github-square {
   color: #212529;
+}
+.fa-github-square:hover {
+  color: #f8f9fa;
 }
 
 .fa-chevron-down {
