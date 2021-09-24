@@ -28,13 +28,29 @@
 }
 
 /* Body Section */
+.section__about {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__about-header {
+  font-size: 2.5em;
+  padding: 20px;
+}
+.section__about-motivation {
+  align-items: center;
+  font-size: 1.5em;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+}
 /* Footer section styling */
 .footer-container {
   height: 100px;
-  background-color: #495057;
-  position: absolute;
-  bottom: 0;
   width: 100vw;
+  background-color: #495057;
 }
 
 .footer-text {
