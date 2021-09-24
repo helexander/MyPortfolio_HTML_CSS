@@ -1,3 +1,6 @@
+// Link to progress bar documentation
+// https://www.florin-pop.com/blog/2017/08/reading-progress-bar/
+
 let prog = document.getElementById('progressBar');
 
 let body = document.body,

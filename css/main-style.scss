@@ -1,0 +1,62 @@
+@import "../partials/color_pallete";
+
+/* Navigation Bar */
+.navbar {
+	opacity: 0.8;
+}
+
+.navbar-brand {
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.nav__bold-first-name {
+	font-weight: 800;
+}
+
+.nav-link {
+	font-size: 1.25rem;
+}
+
+.nav-progress-bar {
+	background-color: $theme-secondary-color-1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 6px;
+	z-index: 10;
+}
+
+/* Body Section */
+
+.section {
+	&__about {
+	}
+
+	&__tech-stack {
+	}
+
+	&__projects {
+	}
+
+	&__contact {
+	}
+}
+
+/* Footer section styling */
+.footer-container {
+	height: 100px;
+	background-color: $theme-color-7;
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+}
+
+.footer-text {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $theme-color-1;
+}

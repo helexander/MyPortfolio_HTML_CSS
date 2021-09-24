@@ -4,19 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Portfolio</title>
-		<link rel="stylesheet" href="css/style.css" />
+
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="css/main-style.css" />
+		<link rel="stylesheet" href="css/hero-section.css" />
+		<script
+			src="https://kit.fontawesome.com/e9cf00793a.js"
+			crossorigin="anonymous"
+		></script>
+		<title>My Portfolio</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">My Portfolio</a>
+				<a class="navbar-brand" href="#"
+					><span class="nav__bold-first-name">Jeremy</span>Chee</a
+				>
 
 				<!-- Nav Bar toggle item -->
 				<button
@@ -34,16 +42,16 @@
 				<div class="collapse navbar-collapse" id="navbarToggler">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a href="#" class="nav-link active">Home</a>
+							<a href="#hero" class="nav-link active">Home</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">About</a>
+							<a href="#about" class="nav-link">About</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Projects</a>
+							<a href="#projects" class="nav-link">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Contact</a>
+							<a href="#contact" class="nav-link">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -53,9 +61,71 @@
 		</nav>
 
 		<main>
-			<div class="long-section"></div>
+			<!-- Hero Section -->
+			<article id="hero" class="hero-content">
+				<div class="hero-container">
+					<div class="hero-container__left">
+						<p class="hero-text">Hi, I'm Jeremy</p>
+						<span
+							><a href="#project-section" class="special-link"
+								>full-stack developer</a
+							></span
+						>
+						<p class="hero-text">
+							Passionate and solution-oriented developer with decent experience
+							with software development.
+						</p>
+						<!-- Can potentially animate chevron button to glow -->
+						<button type="button" class="btn btn-dark button__get-in-touch">
+							<i class="fas fa-chevron-down"></i> GET IN TOUCH
+						</button>
+						<div class="container__button-socials">
+							<span class="button__social-github">
+								<a href="https://github.com/helexander" target="_blank"
+									><i class="fab fa-github-square fa-2x"></i
+								></a>
+							</span>
+							<span class="button__social-linkedin">
+								<a
+									href="https://www.linkedin.com/in/jeremy-chee/"
+									target="_blank"
+									><i class="fab fa-linkedin fa-2x"></i
+								></a>
+							</span>
+						</div>
+					</div>
+					<div class="hero-container__right">
+						<img
+							src="images/profile-pic-colored-circle.png"
+							class="profile-pic"
+							alt="This is an image of Jeremy"
+						/>
+					</div>
+				</div>
+			</article>
+			<div class="section__about" id="about">
+				<h1>This is the about me section</h1>
+				<p>Forever learning and growing. Perfecting the art of coding.</p>
+				<h2>Tech Stack</h2>
+				<div class="section__tech-stack"></div>
+				<p>JavaScript, C++, Java, Node, HTML, CSS, React, Swift</p>
+			</div>
+			<div class="section__projects" id="projects">
+				<h1>This is the project section</h1>
+				<p>Cards of project</p>
+			</div>
+			<div class="section__contact" id="contact">
+				<h1>This is the contact me section</h1>
+				<p>Student ID contact me form</p>
+			</div>
+			<div class="footer-container">
+				<p id="copyright" class="footer-text"></p>
+			</div>
 		</main>
+		<script src="js/main-script.js"></script>
 		<script src="js/progress-bar.js"></script>
+		<script src="js/footer-section.js"></script>
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
