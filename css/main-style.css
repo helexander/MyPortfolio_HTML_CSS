@@ -19,7 +19,6 @@
 
 .nav-progress-bar {
   background-color: #71aee4c5;
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
@@ -29,10 +28,9 @@
 
 /* Body Section */
 .section__about {
-  height: 600px;
+  height: 820px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .section__about-header {
@@ -85,7 +83,7 @@
   border-radius: 100rem;
   color: #fff;
   font-weight: bold;
-  cursor: pointer;
+  cursor: default;
 }
 .chip__html {
   background-color: #ffc300;

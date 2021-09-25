@@ -8,8 +8,9 @@
 
 .hero-container {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
   font-family: "Avenir Next", Open Sans, sans-serif;
+  margin-left: 10%;
   padding-top: 80px;
   padding-bottom: 30px;
   height: 800px;
@@ -17,12 +18,19 @@
 .hero-container__left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 650px;
+}
+@media (max-width: 990px) {
+  .hero-container__left {
+    order: 2;
+  }
 }
 .hero-container__right {
   display: flex;
-  align-items: center;
+}
+@media (max-width: 990px) {
+  .hero-container__right {
+    order: 1;
+  }
 }
 
 .hero-container p {
@@ -73,8 +81,9 @@
 .button__get-in-touch {
   border-radius: 290486px;
   margin-bottom: 10px;
-  width: 30%;
+  width: 180px;
 }
+
 .container__button_socials {
   display: flex;
   padding-right: 20px;
