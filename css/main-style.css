@@ -28,13 +28,101 @@
 }
 
 /* Body Section */
+.section__about {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__about-header {
+  font-size: 2.5em;
+  padding: 20px;
+}
+.section__about-motivation {
+  align-items: center;
+  font-size: 1.5em;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+}
+.section__tech-container {
+  height: 400px;
+}
+.section__tech-item {
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+}
+.section__projects {
+  height: 1000px;
+}
+.section__projects-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__contact {
+  height: 500px;
+}
+
+/* Project Items */
+.card {
+  margin-bottom: 5px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-footer img {
+  height: 50px;
+  width: 50px;
+}
+
+.chip {
+  display: inline-block;
+  border-radius: 100rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.chip__html {
+  background-color: #ffc300;
+}
+.chip__css {
+  background-color: #89f7f9;
+}
+.chip__js {
+  background-color: #fcff57;
+}
+.chip__react {
+  background-color: #00d1f7;
+}
+.chip__react-native {
+  background-color: #2a5dac;
+}
+.chip__node {
+  background-color: #4caf50;
+}
+.chip__java {
+  background-color: #f44336;
+}
+.chip__c {
+  background-color: #cccdcc;
+}
+.chip__python {
+  background-color: #004f00;
+}
+.chip__swift {
+  background-color: #f39843;
+}
+
 /* Footer section styling */
 .footer-container {
   height: 100px;
-  background-color: #495057;
-  position: absolute;
-  bottom: 0;
   width: 100vw;
+  background-color: #495057;
 }
 
 .footer-text {
