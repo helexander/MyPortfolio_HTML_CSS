@@ -52,10 +52,32 @@
 		}
 	}
 
-	&__tech-stack {
+	&__tech {
+		&-container {
+			height: 400px;
+		}
+		&-item {
+			margin: 10px;
+			width: 70px;
+			height: 70px;
+		}
+
+		&-stack-first-row {
+		}
+		&-stack-second-row {
+		}
+		&-stack-third-row {
+		}
 	}
 
 	&__projects {
+		&-header {
+			height: 600px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&__contact {
