@@ -32,12 +32,52 @@
 
 .section {
 	&__about {
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-header {
+			font-size: 2.5em;
+			padding: 20px;
+		}
+
+		&-motivation {
+			align-items: center;
+			font-size: 1.5em;
+			height: 300px;
+			width: 500px;
+			text-align: center;
+		}
 	}
 
-	&__tech-stack {
+	&__tech {
+		&-container {
+			height: 400px;
+		}
+		&-item {
+			margin: 10px;
+			width: 70px;
+			height: 70px;
+		}
+
+		&-stack-first-row {
+		}
+		&-stack-second-row {
+		}
+		&-stack-third-row {
+		}
 	}
 
 	&__projects {
+		&-header {
+			height: 600px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&__contact {
@@ -47,10 +87,8 @@
 /* Footer section styling */
 .footer-container {
 	height: 100px;
-	background-color: $theme-color-7;
-	position: absolute;
-	bottom: 0;
 	width: 100vw;
+	background-color: $theme-color-7;
 }
 
 .footer-text {
