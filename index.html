@@ -4,17 +4,198 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Portfolio</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="images/favicon-img.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/main-style.css" />
+		<link rel="stylesheet" href="css/hero-section.css" />
+		<!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
+		<script
+			src="https://kit.fontawesome.com/e9cf00793a.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Jeremy Chee - Full Stack Developer</title>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Projects</li>
-				<li>Contact</li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"
+					><span class="nav__bold-first-name">Jeremy</span>Chee</a
+				>
+
+				<!-- Nav Bar toggle item -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarToggler"
+					aria-controls="navbarToggler"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a href="#hero" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#projects" class="nav-link">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Reading progress bar -->
+			<div class="nav-progress-bar" id="progressBar"></div>
 		</nav>
+
+		<main>
+			<!-- Hero Section -->
+			<article id="hero" class="hero-content">
+				<div class="hero-container">
+					<div class="hero-container__left">
+						<p class="hero-text">Hi, I'm Jeremy</p>
+						<span
+							><a href="#project-section" class="special-link"
+								>full-stack developer</a
+							></span
+						>
+						<p class="hero-text">
+							Passionate and solution-oriented developer with decent experience
+							with software development.
+						</p>
+						<!-- Can potentially animate chevron button to glow -->
+						<button type="button" class="btn btn-dark button__get-in-touch">
+							<span><i class="fas fa-chevron-down"></i></span>
+							<span>GET IN TOUCH</span>
+						</button>
+						<div class="container__button-socials">
+							<span class="button__social-github">
+								<a href="https://github.com/helexander" target="_blank"
+									><i class="fab fa-github-square fa-2x"></i
+								></a>
+							</span>
+							<span class="button__social-linkedin">
+								<a
+									href="https://www.linkedin.com/in/jeremy-chee/"
+									target="_blank"
+									><i class="fab fa-linkedin fa-2x"></i
+								></a>
+							</span>
+						</div>
+					</div>
+					<div class="hero-container__right">
+						<img
+							src="images/profile-pic-colored-circle.png"
+							class="profile-pic"
+							alt="This is an image of Jeremy"
+						/>
+					</div>
+				</div>
+			</article>
+			<div class="section__about" id="about">
+				<h1 class="section__about-header">Meet Jeremy 👋🏼</h1>
+				<div class="section__about-motivation">
+					A curious and creative mind has led me to being involved in the world
+					of software development. Being inspired by the works of others
+					motivates me to keep on learning and growing. Currently attempting to
+					perfect the art of coding.
+				</div>
+				<h2 class="section__about-header">Tech Stack</h2>
+				<div class="section__tech-container">
+					<div class="section__tech-stack-first-row">
+						<img
+							src="images/tech-icons/icons8-html-5.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+						<img
+							src="images/tech-icons/icons8-css3.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+						<img
+							src="images/tech-icons/icons8-javascript.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+					</div>
+					<div class="section__tech-stack-second-row">
+						<img
+							src="images/tech-icons/icons8-react.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+						<img
+							src="images/tech-icons/icons8-nodejs.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+						<img
+							src="images/tech-icons/icons8-java.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+					</div>
+					<div class="section__tech-stack-third-row">
+						<img
+							src="images/tech-icons/icons8-c++-2.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+						<img
+							src="images/tech-icons/icons8-python.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+						<img
+							src="images/tech-icons/icons8-swift.svg"
+							class="section__tech-item"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="section__projects" id="projects">
+				<h1 class="section__projects-header">Projects</h1>
+				<div class="section__projects-item">
+					<p>Show Image</p>
+					<p>Link to working website and code/github repo?</p>
+				</div>
+				<div class="section__projects-item"></div>
+				<div class="section__projects-item"></div>
+				<div class="section__projects-item"></div>
+				<div class="section__projects-item"></div>
+				<div class="section__projects-item"></div>
+			</div>
+			<div class="section__contact" id="contact">
+				<h1>This is the contact me section</h1>
+				<p>Student ID contact me form</p>
+			</div>
+		</main>
+		<footer class="footer-container">
+			<p id="copyright" class="footer-text"></p>
+		</footer>
+		<script src="js/main-script.js"></script>
+		<script src="js/progress-bar.js"></script>
+		<script src="js/footer-section.js"></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

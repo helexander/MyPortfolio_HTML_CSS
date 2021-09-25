@@ -1,0 +1,100 @@
+/* From light to dark colour */
+/* Assuring animated items are playing before loading screen */
+.js-loading *,
+.js-loading *::before,
+.js-loading *::after {
+  animation-play-state: paused !important;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Avenir Next", Open Sans, sans-serif;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  height: 800px;
+}
+.hero-container__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 650px;
+}
+.hero-container__right {
+  display: flex;
+  align-items: center;
+}
+
+.hero-container p {
+  color: #adb5bd;
+  font-size: 2em;
+  max-width: 80%;
+}
+
+.profile-pic {
+  height: 350px;
+  width: 350px;
+  filter: grayscale(100%);
+  filter: gray;
+}
+.profile-pic:hover {
+  filter: none;
+}
+
+.special-link {
+  font-family: "Avenir Next", Open Sans, sans-serif;
+  font-size: 2em;
+  color: #212529;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  z-index: 10;
+}
+.special-link::before {
+  border-top: 0.4em solid #71aee4c5;
+  bottom: 0.01em;
+  content: "";
+  left: -0.05em;
+  position: absolute;
+  right: -0.05em;
+  transition: all 0.4s cubic-bezier(0, 1, 0.3, 1);
+  z-index: -1;
+}
+.special-link:hover {
+  color: #353a40;
+  text-decoration: none;
+}
+.special-link:hover::before {
+  border-width: 1.1em;
+  bottom: 0.25em;
+  transition: all 0.3s cubic-bezier(0, 1.5, 0.5, 1);
+}
+
+.button__get-in-touch {
+  border-radius: 290486px;
+  margin-bottom: 10px;
+  width: 30%;
+}
+.container__button_socials {
+  display: flex;
+  padding-right: 20px;
+}
+
+/* Styling of font-awesome icons */
+.fa-linkedin {
+  color: #212529;
+}
+.fa-linkedin:hover {
+  color: #f8f9fa;
+}
+
+.fa-github-square {
+  color: #212529;
+}
+.fa-github-square:hover {
+  color: #f8f9fa;
+}
+
+.fa-chevron-down {
+  color: #f8f9fa;
+}
