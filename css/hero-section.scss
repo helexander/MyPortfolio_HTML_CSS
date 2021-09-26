@@ -9,25 +9,20 @@
 
 .hero-container {
 	display: flex;
-	align-items: center;
+	align-content: center;
 	font-family: "Avenir Next", Open Sans, sans-serif;
-	margin-left: 10%;
 	padding-top: 80px;
 	padding-bottom: 30px;
 	height: 800px;
 
 	&__left {
-		display: flex;
 		flex-direction: column;
-
 		@media (max-width: 990px) {
 			order: 2;
 		}
 	}
 
 	&__right {
-		display: flex;
-
 		@media (max-width: 990px) {
 			order: 1;
 		}

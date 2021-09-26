@@ -8,24 +8,19 @@
 
 .hero-container {
   display: flex;
-  align-items: center;
+  align-content: center;
   font-family: "Avenir Next", Open Sans, sans-serif;
-  margin-left: 10%;
   padding-top: 80px;
   padding-bottom: 30px;
   height: 800px;
 }
 .hero-container__left {
-  display: flex;
   flex-direction: column;
 }
 @media (max-width: 990px) {
   .hero-container__left {
     order: 2;
   }
-}
-.hero-container__right {
-  display: flex;
 }
 @media (max-width: 990px) {
   .hero-container__right {
