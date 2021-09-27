@@ -6,27 +6,44 @@
   animation-play-state: paused !important;
 }
 
+.hero-content {
+  background-color: #e9ecef;
+}
+
 .hero-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: center;
   font-family: "Avenir Next", Open Sans, sans-serif;
   padding-top: 80px;
   padding-bottom: 30px;
   height: 800px;
+  width: 80vw;
+  margin: auto;
 }
 .hero-container__left {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 650px;
+}
+@media (max-width: 990px) {
+  .hero-container__left {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    order: 2;
+  }
 }
 .hero-container__right {
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 990px) {
+  .hero-container__right {
+    margin-top: 230px;
+    order: 1;
+  }
 }
 
 .hero-container p {
-  color: #adb5bd;
+  color: #6c757d;
   font-size: 2em;
   max-width: 80%;
 }
@@ -44,7 +61,7 @@
 .special-link {
   font-family: "Avenir Next", Open Sans, sans-serif;
   font-size: 2em;
-  color: #212529;
+  color: #6c757d;
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -61,7 +78,7 @@
   z-index: -1;
 }
 .special-link:hover {
-  color: #353a40;
+  color: #212529;
   text-decoration: none;
 }
 .special-link:hover::before {
@@ -73,8 +90,9 @@
 .button__get-in-touch {
   border-radius: 290486px;
   margin-bottom: 10px;
-  width: 30%;
+  width: 180px;
 }
+
 .container__button_socials {
   display: flex;
   padding-right: 20px;

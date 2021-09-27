@@ -7,29 +7,42 @@
 	animation-play-state: paused !important;
 }
 
+.hero-content {
+	background-color: $theme-color-2;
+}
+
 .hero-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-content: center;
 	font-family: "Avenir Next", Open Sans, sans-serif;
 	padding-top: 80px;
 	padding-bottom: 30px;
 	height: 800px;
+	width: 80vw;
+	margin: auto;
 
 	&__left {
-		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		width: 650px;
+		@media (max-width: 990px) {
+			margin-top: 40px;
+			margin-bottom: 100px;
+			order: 2;
+		}
 	}
 
 	&__right {
 		display: flex;
-		align-items: center;
+		justify-content: center;
+		@media (max-width: 990px) {
+			margin-top: 230px;
+			order: 1;
+		}
 	}
 }
 
 .hero-container p {
-	color: $theme-color-5;
+	color: $theme-color-6;
 	font-size: 2em;
 	max-width: 80%;
 }
@@ -48,7 +61,7 @@
 .special-link {
 	font-family: "Avenir Next", Open Sans, sans-serif;
 	font-size: 2em;
-	color: $theme-color-9;
+	color: $theme-color-6;
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
@@ -66,7 +79,7 @@
 	}
 
 	&:hover {
-		color: $theme-color-8;
+		color: $theme-color-9;
 		text-decoration: none;
 
 		&::before {
@@ -81,12 +94,7 @@
 	&__get-in-touch {
 		border-radius: 290486px;
 		margin-bottom: 10px;
-		width: 30%;
-	}
-	&__social-github {
-	}
-
-	&__social-linkedin {
+		width: 180px;
 	}
 }
 

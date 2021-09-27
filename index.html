@@ -13,7 +13,6 @@
 		/>
 		<link rel="stylesheet" href="css/main-style.css" />
 		<link rel="stylesheet" href="css/hero-section.css" />
-		<!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
 		<script
 			src="https://kit.fontawesome.com/e9cf00793a.js"
 			crossorigin="anonymous"
@@ -64,47 +63,52 @@
 		<main>
 			<!-- Hero Section -->
 			<article id="hero" class="hero-content">
-				<div class="hero-container">
-					<div class="hero-container__left">
-						<p class="hero-text">Hi, I'm Jeremy</p>
-						<span
-							><a href="#project-section" class="special-link"
-								>full-stack developer</a
-							></span
-						>
-						<p class="hero-text">
-							Passionate and solution-oriented developer with decent experience
-							with software development.
-						</p>
-						<!-- Can potentially animate chevron button to glow -->
-						<button type="button" class="btn btn-dark button__get-in-touch">
-							<span><i class="fas fa-chevron-down"></i></span>
-							<span>GET IN TOUCH</span>
-						</button>
-						<div class="container__button-socials">
-							<span class="button__social-github">
-								<a href="https://github.com/helexander" target="_blank"
-									><i class="fab fa-github-square fa-2x"></i
-								></a>
-							</span>
-							<span class="button__social-linkedin">
-								<a
-									href="https://www.linkedin.com/in/jeremy-chee/"
-									target="_blank"
-									><i class="fab fa-linkedin fa-2x"></i
-								></a>
-							</span>
+				<div class="container">
+					<div class="row hero-container">
+						<div class="col-md-12 col-lg-6 hero-container__left">
+							<p class="hero-text">Hi, I'm Jeremy</p>
+							<span
+								><a href="#project-section" class="special-link"
+									>full-stack developer</a
+								></span
+							>
+							<p class="hero-text">
+								Passionate and solution-oriented developer with decent
+								experience with software development.
+							</p>
+							<!-- Can potentially animate chevron button to glow -->
+							<button type="button" class="btn btn-dark button__get-in-touch">
+								<span><i class="fas fa-chevron-down"></i></span>
+								<span>GET IN TOUCH</span>
+							</button>
+							<div class="container__button-socials">
+								<span class="button__social-github">
+									<a href="https://github.com/helexander" target="_blank"
+										><i class="fab fa-github-square fa-3x"></i
+									></a>
+								</span>
+								<span>
+									<a
+										href="https://www.linkedin.com/in/jeremy-chee/"
+										target="_blank"
+										class="button__social-linkedin"
+										><i class="fab fa-linkedin fa-3x"></i
+									></a>
+								</span>
+							</div>
 						</div>
-					</div>
-					<div class="hero-container__right">
-						<img
-							src="images/profile-pic-colored-circle.png"
-							class="profile-pic"
-							alt="This is an image of Jeremy"
-						/>
+						<div class="col-md-12 col-lg-6 hero-container__right">
+							<img
+								src="images/profile-pic-colored-circle.png"
+								class="profile-pic"
+								alt="This is an image of Jeremy"
+							/>
+						</div>
 					</div>
 				</div>
 			</article>
+
+			<!-- About Me Section -->
 			<div class="section__about" id="about">
 				<h1 class="section__about-header">Meet Jeremy 👋🏼</h1>
 				<div class="section__about-motivation">
@@ -168,21 +172,158 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Projects Section -->
+
 			<div class="section__projects" id="projects">
-				<h1 class="section__projects-header">Projects</h1>
-				<div class="section__projects-item">
-					<p>Show Image</p>
-					<p>Link to working website and code/github repo?</p>
+				<div class="container">
+					<h1 class="section__projects-header">Projects</h1>
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<div class="card">
+								<div class="card-header">
+									Simon's Game
+									<span class="chip chip__html">HTML</span>
+									<span class="chip chip__css">CSS</span>
+									<span class="chip chip__js">JavaScript</span>
+								</div>
+								<div class="card-body">
+									<img src="" alt="" />
+									<p class="card-text">Description</p>
+								</div>
+								<div class="card-footer">
+									<a href="" target="_blank"
+										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									/></a>
+									<a href="" target="_blank"
+										><img
+											src="images/project-icons/icons8-rocket-96.png"
+											alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<div class="card">
+								<div class="card-header">
+									Calculator JS
+									<span class="chip chip__html">HTML</span>
+									<span class="chip chip__css">CSS</span>
+									<span class="chip chip__js">JavaScript</span>
+								</div>
+								<div class="card-body">
+									<img src="" alt="" />
+									<p class="card-text">Description</p>
+								</div>
+								<div class="card-footer">
+									<a href="" target="_blank"
+										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									/></a>
+									<a href="" target="_blank"
+										><img
+											src="images/project-icons/icons8-rocket-96.png"
+											alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<div class="card">
+								<div class="card-header">
+									Restaurants Around Me
+									<span class="chip chip__react-native">React Native</span>
+								</div>
+								<div class="card-body">
+									<img src="" alt="" />
+									<p class="card-text">Description</p>
+								</div>
+								<div class="card-footer">
+									<a href="" target="_blank"
+										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									/></a>
+									<a href="" target="_blank"
+										><img
+											src="images/project-icons/icons8-rocket-96.png"
+											alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<div class="card">
+								<div class="card-header">
+									To Do List
+									<span class="chip chip__swift">Swift</span>
+								</div>
+								<div class="card-body">
+									<img src="" alt="" />
+									<p class="card-text">Description</p>
+								</div>
+								<div class="card-footer">
+									<a href="" target="_blank"
+										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									/></a>
+									<a href="" target="_blank"
+										><img
+											src="images/project-icons/icons8-rocket-96.png"
+											alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="section__projects-item"></div>
-				<div class="section__projects-item"></div>
-				<div class="section__projects-item"></div>
-				<div class="section__projects-item"></div>
-				<div class="section__projects-item"></div>
 			</div>
+
+			<!-- Contact Me Section -->
 			<div class="section__contact" id="contact">
-				<h1>This is the contact me section</h1>
-				<p>Student ID contact me form</p>
+				<div class="container">
+					<h1 class="section__contact-header">Connect with me (?)</h1>
+					<div class="section__contact-details">
+						<div class="section__contact-item">
+							<p>
+								Mail Me:
+								<a
+									href="mailto:jeremychee97@gmail.com?subject=Greetings from a visitor of Jeremy Chee's portfolio"
+									><img
+										src="images/contact-icons/static-mail.svg"
+										alt=""
+										onmouseover="hoverMail(this)"
+										onmouseout="unhoverMail(this)"
+									/>jeremychee97@gmail.com</a
+								>
+							</p>
+						</div>
+						<div class="section__contact-item">
+							<p>
+								Connect with Me:
+								<a
+									href="https://www.linkedin.com/in/jeremy-chee/"
+									target="_blank"
+									><img
+										src="images/contact-icons/static-linkedin.svg"
+										alt=""
+										onmouseover="hoverLinkedin(this)"
+										onmouseout="unhoverLinkedin(this)"
+									/>Jeremy Chee</a
+								>
+							</p>
+						</div>
+						<div class="section__contact-item">
+							<p>
+								Stalk Me:
+								<a href="https://github.com/helexander" target="_blank"
+									><img
+										src="images/contact-icons/static-github.svg"
+										alt=""
+										onmouseover="hoverGithub(this)"
+										onmouseout="unhoverGithub(this)"
+									/>Helexander</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer class="footer-container">

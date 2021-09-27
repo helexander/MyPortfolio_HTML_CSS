@@ -32,11 +32,11 @@
 
 .section {
 	&__about {
-		height: 600px;
+		height: 750px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		background-color: $theme-color-1;
 
 		&-header {
 			font-size: 2.5em;
@@ -54,25 +54,21 @@
 
 	&__tech {
 		&-container {
-			height: 400px;
+			height: 350px;
 		}
 		&-item {
 			margin: 10px;
 			width: 70px;
 			height: 70px;
 		}
-
-		&-stack-first-row {
-		}
-		&-stack-second-row {
-		}
-		&-stack-third-row {
-		}
 	}
 
 	&__projects {
+		padding-top: 20px;
+		height: 600px;
+		background-color: $theme-color-2;
+
 		&-header {
-			height: 600px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -81,6 +77,96 @@
 	}
 
 	&__contact {
+		height: 500px;
+		background-color: $theme-color-1;
+
+		&-header {
+			display: flex;
+			justify-content: center;
+			font-size: 2.5em;
+			padding: 20px;
+		}
+
+		&-details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		&-item img {
+			margin-left: 8px;
+			margin-right: 5px;
+			height: 50px;
+			width: 50px;
+		}
+	}
+}
+
+/* Project Items */
+
+.card {
+	margin-bottom: 5px;
+
+	&-footer {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&-footer img {
+		height: 50px;
+		width: 50px;
+	}
+}
+
+// Potential animation for chip
+// https://codepen.io/Call_in/pen/PopRbLw
+
+.chip {
+	display: inline-block;
+	border-radius: 100rem;
+	color: #fff;
+	font-weight: bold;
+	cursor: default;
+
+	&__html {
+		background-color: #ffc300;
+	}
+
+	&__css {
+		background-color: #89f7f9;
+	}
+
+	&__js {
+		background-color: #fcff57;
+	}
+
+	&__react {
+		background-color: #00d1f7;
+	}
+
+	&__react-native {
+		background-color: #2a5dac;
+	}
+
+	&__node {
+		background-color: #4caf50;
+	}
+
+	&__java {
+		background-color: #f44336;
+	}
+
+	&__c {
+		background-color: #cccdcc;
+	}
+
+	&__python {
+		background-color: #004f00;
+	}
+
+	&__swift {
+		background-color: #f39843;
 	}
 }
 
@@ -88,7 +174,7 @@
 .footer-container {
 	height: 100px;
 	width: 100vw;
-	background-color: $theme-color-7;
+	background-color: $theme-color-5;
 }
 
 .footer-text {
