@@ -9,3 +9,26 @@ function showPage() {
     // Remove the js-paused class when page has loaded
     document.body.className = document.body.className.replace("js-loading", "");
 }
+
+// Contact section
+
+function hoverMail(elem) {
+    elem.setAttribute('src', '../images/contact-icons/animated-mail.gif');
+}
+function unhoverMail(elem) {
+    elem.setAttribute('src', '../images/contact-icons/static-mail.svg');
+}
+
+function hoverLinkedin(elem) {
+    elem.setAttribute('src', '../images/contact-icons/animated-linkedin.gif');
+}
+function unhoverLinkedin(elem) {
+    elem.setAttribute('src', '../images/contact-icons/static-linkedin.svg');
+}
+
+function hoverGithub(elem) {
+    elem.setAttribute('src', '../images/contact-icons/animated-github.gif');
+}
+function unhoverGithub(elem) {
+    elem.setAttribute('src', '../images/contact-icons/static-github.svg');
+}

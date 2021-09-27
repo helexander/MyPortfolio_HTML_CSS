@@ -32,10 +32,11 @@
 
 .section {
 	&__about {
-		height: 820px;
+		height: 750px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		background-color: $theme-color-1;
 
 		&-header {
 			font-size: 2.5em;
@@ -53,7 +54,7 @@
 
 	&__tech {
 		&-container {
-			height: 400px;
+			height: 350px;
 		}
 		&-item {
 			margin: 10px;
@@ -63,7 +64,9 @@
 	}
 
 	&__projects {
+		padding-top: 20px;
 		height: 600px;
+		background-color: $theme-color-2;
 
 		&-header {
 			display: flex;
@@ -75,6 +78,28 @@
 
 	&__contact {
 		height: 500px;
+		background-color: $theme-color-1;
+
+		&-header {
+			display: flex;
+			justify-content: center;
+			font-size: 2.5em;
+			padding: 20px;
+		}
+
+		&-details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		&-item img {
+			margin-left: 8px;
+			margin-right: 5px;
+			height: 50px;
+			width: 50px;
+		}
 	}
 }
 
@@ -149,7 +174,7 @@
 .footer-container {
 	height: 100px;
 	width: 100vw;
-	background-color: $theme-color-7;
+	background-color: $theme-color-5;
 }
 
 .footer-text {
