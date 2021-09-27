@@ -65,8 +65,16 @@
 
 	&__projects {
 		padding-top: 20px;
-		height: 600px;
+		height: 410px;
 		background-color: $theme-color-2;
+
+		@media (max-width: 1195px) {
+			height: 550px;
+		}
+
+		@media (max-width: 768px) {
+			height: 900px;
+		}
 
 		&-header {
 			display: flex;

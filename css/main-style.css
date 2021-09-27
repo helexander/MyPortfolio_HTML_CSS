@@ -56,8 +56,18 @@
 }
 .section__projects {
   padding-top: 20px;
-  height: 600px;
+  height: 410px;
   background-color: #e9ecef;
+}
+@media (max-width: 1195px) {
+  .section__projects {
+    height: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .section__projects {
+    height: 900px;
+  }
 }
 .section__projects-header {
   display: flex;
