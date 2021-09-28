@@ -56,18 +56,23 @@
 }
 .section__projects {
   padding-top: 20px;
-  height: 410px;
+  height: 550px;
   background-color: #e9ecef;
 }
 @media (max-width: 1195px) {
   .section__projects {
-    height: 550px;
+    height: 850px;
   }
 }
 @media (max-width: 768px) {
   .section__projects {
-    height: 900px;
+    height: 1620px;
   }
+}
+.section__projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section__projects-header {
   display: flex;
@@ -76,8 +81,10 @@
   align-items: center;
 }
 .section__contact {
-  height: 500px;
+  height: 370px;
   background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
 }
 .section__contact-header {
   display: flex;
@@ -101,6 +108,15 @@
 /* Project Items */
 .card {
   margin-bottom: 5px;
+  width: 300px;
+}
+.card-header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.card-body img {
+  height: 200px;
+  width: 270px;
 }
 .card-footer {
   display: flex;
@@ -113,8 +129,11 @@
 
 .chip {
   display: inline-block;
-  border-radius: 100rem;
-  color: #fff;
+  font-size: 14px;
+  padding: 0.2em 0.6em;
+  margin-bottom: 5px;
+  border-radius: 9999999px;
+  color: #212529;
   font-weight: bold;
   cursor: default;
 }
@@ -131,7 +150,7 @@
   background-color: #00d1f7;
 }
 .chip__react-native {
-  background-color: #2a5dac;
+  background-color: #3572ce;
 }
 .chip__node {
   background-color: #4caf50;

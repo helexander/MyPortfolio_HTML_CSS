@@ -65,15 +65,22 @@
 
 	&__projects {
 		padding-top: 20px;
-		height: 410px;
+		height: 550px;
 		background-color: $theme-color-2;
 
 		@media (max-width: 1195px) {
-			height: 550px;
+			height: 850px;
 		}
 
 		@media (max-width: 768px) {
-			height: 900px;
+			height: 1620px;
+		}
+
+		// This container should be aligning project cards to be center???
+		&-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		&-header {
@@ -85,8 +92,10 @@
 	}
 
 	&__contact {
-		height: 500px;
+		height: 370px;
 		background-color: $theme-color-1;
+		display: flex;
+		align-items: center;
 
 		&-header {
 			display: flex;
@@ -115,6 +124,17 @@
 
 .card {
 	margin-bottom: 5px;
+	width: 300px;
+
+	&-header {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+
+	&-body img {
+		height: 200px;
+		width: 270px;
+	}
 
 	&-footer {
 		display: flex;
@@ -132,8 +152,11 @@
 
 .chip {
 	display: inline-block;
-	border-radius: 100rem;
-	color: #fff;
+	font-size: 14px;
+	padding: 0.2em 0.6em;
+	margin-bottom: 5px;
+	border-radius: 9999999px;
+	color: $theme-color-9;
 	font-weight: bold;
 	cursor: default;
 
@@ -154,7 +177,7 @@
 	}
 
 	&__react-native {
-		background-color: #2a5dac;
+		background-color: #3572ce;
 	}
 
 	&__node {
