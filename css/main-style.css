@@ -85,6 +85,7 @@
   background-color: #f8f9fa;
   display: flex;
   align-items: center;
+  background-image: url("../images/map-bg.jpg");
 }
 .section__contact-header {
   display: flex;
