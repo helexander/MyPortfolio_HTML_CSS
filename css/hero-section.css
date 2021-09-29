@@ -59,6 +59,7 @@
   width: 350px;
   filter: grayscale(100%);
   filter: gray;
+  content: url("../images/profile-pic-colored-circle.png");
 }
 .profile-pic:hover {
   filter: none;
@@ -109,14 +110,14 @@
   color: #212529;
 }
 .fa-linkedin:hover {
-  color: #f8f9fa;
+  color: #adb5bd;
 }
 
 .fa-github-square {
   color: #212529;
 }
 .fa-github-square:hover {
-  color: #f8f9fa;
+  color: #adb5bd;
 }
 
 .fa-chevron-down {

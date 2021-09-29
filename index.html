@@ -19,7 +19,9 @@
 		></script>
 		<title>Jeremy Chee - Full Stack Developer</title>
 	</head>
+
 	<body>
+		<!-- Navigation Bar -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#"
@@ -77,7 +79,11 @@
 								experience with software development.
 							</p>
 							<!-- Can potentially animate chevron button to glow -->
-							<button type="button" class="btn btn-dark button__get-in-touch">
+							<button
+								type="button"
+								class="btn btn-dark button__get-in-touch"
+								onClick="document.getElementById('contact').scrollIntoView()"
+							>
 								<span><i class="fas fa-chevron-down"></i></span>
 								<span>GET IN TOUCH</span>
 							</button>
@@ -99,7 +105,7 @@
 						</div>
 						<div class="col-md-12 col-lg-6 hero-container__right">
 							<img
-								src="images/profile-pic-colored-circle.png"
+								src=""
 								class="profile-pic"
 								alt="This is an image of Jeremy"
 							/>
@@ -120,55 +126,19 @@
 				<h2 class="section__about-header">Tech Stack</h2>
 				<div class="section__tech-container">
 					<div class="section__tech-stack-first-row">
-						<img
-							src="images/tech-icons/icons8-html-5.svg"
-							class="section__tech-item"
-							alt=""
-						/>
-						<img
-							src="images/tech-icons/icons8-css3.svg"
-							class="section__tech-item"
-							alt=""
-						/>
-						<img
-							src="images/tech-icons/icons8-javascript.svg"
-							class="section__tech-item"
-							alt=""
-						/>
+						<img src="" class="section__tech-item-html" alt="" />
+						<img src="" class="section__tech-item-css" alt="" />
+						<img src="" class="section__tech-item-javascript" alt="" />
 					</div>
 					<div class="section__tech-stack-second-row">
-						<img
-							src="images/tech-icons/icons8-react.svg"
-							class="section__tech-item"
-							alt=""
-						/>
-						<img
-							src="images/tech-icons/icons8-nodejs.svg"
-							class="section__tech-item"
-							alt=""
-						/>
-						<img
-							src="images/tech-icons/icons8-java.svg"
-							class="section__tech-item"
-							alt=""
-						/>
+						<img src="" class="section__tech-item-react" alt="" />
+						<img src="" class="section__tech-item-node" alt="" />
+						<img src="" class="section__tech-item-java" alt="" />
 					</div>
 					<div class="section__tech-stack-third-row">
-						<img
-							src="images/tech-icons/icons8-c++-2.svg"
-							class="section__tech-item"
-							alt=""
-						/>
-						<img
-							src="images/tech-icons/icons8-python.svg"
-							class="section__tech-item"
-							alt=""
-						/>
-						<img
-							src="images/tech-icons/icons8-swift.svg"
-							class="section__tech-item"
-							alt=""
-						/>
+						<img src="" class="section__tech-item-cplusplus" alt="" />
+						<img src="" class="section__tech-item-python" alt="" />
+						<img src="" class="section__tech-item-swift" alt="" />
 					</div>
 				</div>
 			</div>
@@ -179,7 +149,7 @@
 				<div class="container section__projects-container">
 					<h1 class="section__projects-header">Projects</h1>
 					<div class="row">
-						<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6 section__projects-item">
 							<div class="card">
 								<div class="card-header">
 									Simon's Game
@@ -190,22 +160,24 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<img src="images/project-display/simons-game.png" alt="" />
+									<img src="" alt="" class="card-body-img-1" />
 									<p class="card-text"></p>
 								</div>
 								<div class="card-footer">
-									<a href="" target="_blank"
-										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									<a
+										href="https://github.com/helexander/SimonsGame"
+										target="_blank"
+										><img src="" alt="" class="card-footer-btn-github"
 									/></a>
-									<a href="" target="_blank"
-										><img
-											src="images/project-icons/icons8-rocket-96.png"
-											alt=""
+									<a
+										href="https://helexander.github.io/SimonsGame/"
+										target="_blank"
+										><img src="" alt="" class="card-footer-btn-execute"
 									/></a>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6 section__projects-item">
 							<div class="card">
 								<div class="card-header">
 									Calculator JS
@@ -216,22 +188,20 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<img src="" alt="" />
+									<img src="" alt="" class="card-body-img-2" />
 									<p class="card-text"></p>
 								</div>
 								<div class="card-footer">
 									<a href="" target="_blank"
-										><img src="images/project-icons/icons8-github-2.svg" alt=""
+										><img src="" alt="" class="card-footer-btn-github"
 									/></a>
 									<a href="" target="_blank"
-										><img
-											src="images/project-icons/icons8-rocket-96.png"
-											alt=""
+										><img src="" alt="" class="card-footer-btn-execute"
 									/></a>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6 section__projects-item">
 							<div class="card">
 								<div class="card-header">
 									Restaurants Around Me
@@ -240,22 +210,22 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<img src="" alt="" />
+									<img src="" alt="" class="card-body-img-3" />
 									<p class="card-text"></p>
 								</div>
 								<div class="card-footer">
-									<a href="" target="_blank"
-										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									<a
+										href="https://github.com/helexander/ReactNative---Restaurant-Search-App"
+										target="_blank"
+										><img src="" alt="" class="card-footer-btn-github"
 									/></a>
 									<a href="" target="_blank"
-										><img
-											src="images/project-icons/icons8-rocket-96.png"
-											alt=""
+										><img src="" alt="" class="card-footer-btn-execute"
 									/></a>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="col-xl-3 col-lg-4 col-md-6 section__projects-item">
 							<div class="card">
 								<div class="card-header">
 									To Do List
@@ -264,17 +234,17 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<img src="" alt="" />
+									<img src="" alt="" class="card-body-img-4" />
 									<p class="card-text"></p>
 								</div>
 								<div class="card-footer">
-									<a href="" target="_blank"
-										><img src="images/project-icons/icons8-github-2.svg" alt=""
+									<a
+										href="https://github.com/helexander/ToDoList_v1/tree/main/ToDoApp"
+										target="_blank"
+										><img src="" alt="" class="card-footer-btn-github"
 									/></a>
 									<a href="" target="_blank"
-										><img
-											src="images/project-icons/icons8-rocket-96.png"
-											alt=""
+										><img src="" alt="" class="card-footer-btn-execute"
 									/></a>
 								</div>
 							</div>
@@ -294,8 +264,9 @@
 								<a
 									href="mailto:jeremychee97@gmail.com?subject=Greetings from a visitor of Jeremy Chee's portfolio"
 									><img
-										src="images/contact-icons/static-mail.svg"
+										src=""
 										alt=""
+										class="section__contact-item-mail"
 										onmouseover="hoverMail(this)"
 										onmouseout="unhoverMail(this)"
 									/>jeremychee97@gmail.com</a
@@ -309,8 +280,9 @@
 									href="https://www.linkedin.com/in/jeremy-chee/"
 									target="_blank"
 									><img
-										src="images/contact-icons/static-linkedin.svg"
+										src=""
 										alt=""
+										class="section__contact-item-linkedin"
 										onmouseover="hoverLinkedin(this)"
 										onmouseout="unhoverLinkedin(this)"
 									/>Jeremy Chee</a
@@ -322,8 +294,9 @@
 								Stalk Me:
 								<a href="https://github.com/helexander" target="_blank"
 									><img
-										src="images/contact-icons/static-github.svg"
+										src=""
 										alt=""
+										class="section__contact-item-github"
 										onmouseover="hoverGithub(this)"
 										onmouseout="unhoverGithub(this)"
 									/>Helexander</a

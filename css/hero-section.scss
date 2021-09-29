@@ -57,6 +57,7 @@
 	width: 350px;
 	filter: grayscale(100%);
 	filter: gray;
+	content: url("../images/profile-pic-colored-circle.png");
 
 	&:hover {
 		filter: none;
@@ -116,7 +117,7 @@
 	color: $theme-color-9;
 
 	&:hover {
-		color: $theme-color-1;
+		color: $theme-color-5;
 	}
 }
 
@@ -124,7 +125,7 @@
 	color: $theme-color-9;
 
 	&:hover {
-		color: $theme-color-1;
+		color: $theme-color-5;
 	}
 }
 
