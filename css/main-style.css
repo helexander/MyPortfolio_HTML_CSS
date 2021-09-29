@@ -54,12 +54,39 @@
   width: 70px;
   height: 70px;
 }
+.section__tech-item-html {
+  content: url("../images/tech-icons/icons8-html-5.svg");
+}
+.section__tech-item-css {
+  content: url("../images/tech-icons/icons8-css3.svg");
+}
+.section__tech-item-javascript {
+  content: url("../images/tech-icons/icons8-javascript.svg");
+}
+.section__tech-item-react {
+  content: url("../images/tech-icons/icons8-react.svg");
+}
+.section__tech-item-node {
+  content: url("../images/tech-icons/icons8-nodejs.svg");
+}
+.section__tech-item-java {
+  content: url("../images/tech-icons/icons8-java.svg");
+}
+.section__tech-item-cplusplus {
+  content: url("../images/tech-icons/icons8-c++-2.svg");
+}
+.section__tech-item-python {
+  content: url("../images/tech-icons/icons8-python.svg");
+}
+.section__tech-item-swift {
+  content: url("../images/tech-icons/icons8-swift.svg");
+}
 .section__projects {
   padding-top: 20px;
   height: 550px;
   background-color: #e9ecef;
 }
-@media (max-width: 1195px) {
+@media (max-width: 1200px) {
   .section__projects {
     height: 850px;
   }
@@ -80,6 +107,10 @@
   justify-content: center;
   align-items: center;
 }
+.section__projects-item {
+  display: flex;
+  justify-content: center;
+}
 .section__contact {
   height: 370px;
   background-color: #f8f9fa;
@@ -99,6 +130,15 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.section__contact-item-mail {
+  content: url("../images/contact-icons/static-mail.svg");
+}
+.section__contact-item-linkedin {
+  content: url("../images/contact-icons/static-linkedin.svg");
+}
+.section__contact-item-github {
+  content: url("../images/contact-icons/static-github.svg");
+}
 .section__contact-item img {
   margin-left: 8px;
   margin-right: 5px;
@@ -115,6 +155,18 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
+.card-body-img-1 {
+  content: url("../images/project-display/simons-game.png");
+}
+.card-body-img-2 {
+  content: url("");
+}
+.card-body-img-3 {
+  content: url("");
+}
+.card-body-img-4 {
+  content: url("../images/project-display/toDo2.png");
+}
 .card-body img {
   height: 200px;
   width: 270px;
@@ -123,9 +175,21 @@
   display: flex;
   justify-content: space-evenly;
 }
+.card-footer-btn-github {
+  content: url("../images/project-icons/icons8-github-2.svg");
+}
+.card-footer-btn-execute {
+  content: url("../images/project-icons/icons8-rocket-96.png");
+}
 .card-footer img {
   height: 50px;
   width: 50px;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .chip {
