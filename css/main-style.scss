@@ -60,13 +60,63 @@
 			margin: 10px;
 			width: 70px;
 			height: 70px;
+
+			&-html {
+				content: url("../images/tech-icons/icons8-html-5.svg");
+			}
+
+			&-css {
+				content: url("../images/tech-icons/icons8-css3.svg");
+			}
+
+			&-javascript {
+				content: url("../images/tech-icons/icons8-javascript.svg");
+			}
+
+			&-react {
+				content: url("../images/tech-icons/icons8-react.svg");
+			}
+
+			&-node {
+				content: url("../images/tech-icons/icons8-nodejs.svg");
+			}
+
+			&-java {
+				content: url("../images/tech-icons/icons8-java.svg");
+			}
+
+			&-cplusplus {
+				content: url("../images/tech-icons/icons8-c++-2.svg");
+			}
+
+			&-python {
+				content: url("../images/tech-icons/icons8-python.svg");
+			}
+
+			&-swift {
+				content: url("../images/tech-icons/icons8-swift.svg");
+			}
 		}
 	}
 
 	&__projects {
 		padding-top: 20px;
-		height: 600px;
+		height: 550px;
 		background-color: $theme-color-2;
+
+		@media (max-width: 1200px) {
+			height: 850px;
+		}
+
+		@media (max-width: 768px) {
+			height: 1620px;
+		}
+		// This container should be aligning project cards to be center???
+		&-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
 
 		&-header {
 			display: flex;
@@ -74,11 +124,19 @@
 			justify-content: center;
 			align-items: center;
 		}
+
+		&-item {
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	&__contact {
-		height: 500px;
+		height: 370px;
 		background-color: $theme-color-1;
+		display: flex;
+		align-items: center;
+		background-image: url("../images/map-bg.jpg");
 
 		&-header {
 			display: flex;
@@ -94,6 +152,18 @@
 			justify-content: space-evenly;
 		}
 
+		&-item-mail {
+			content: url("../images/contact-icons/static-mail.svg");
+		}
+
+		&-item-linkedin {
+			content: url("../images/contact-icons/static-linkedin.svg");
+		}
+
+		&-item-github {
+			content: url("../images/contact-icons/static-github.svg");
+		}
+
 		&-item img {
 			margin-left: 8px;
 			margin-right: 5px;
@@ -107,15 +177,57 @@
 
 .card {
 	margin-bottom: 5px;
+	width: 300px;
+
+	&-header {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+
+	&-body-img {
+		&-1 {
+			content: url("../images/project-display/simons-game.png");
+		}
+
+		&-2 {
+			content: url("");
+		}
+
+		&-3 {
+			content: url("");
+		}
+
+		&-4 {
+			content: url("../images/project-display/toDo2.png");
+		}
+	}
+
+	&-body img {
+		height: 200px;
+		width: 270px;
+	}
 
 	&-footer {
 		display: flex;
 		justify-content: space-evenly;
+
+		&-btn-github {
+			content: url("../images/project-icons/icons8-github-2.svg");
+		}
+
+		&-btn-execute {
+			content: url("../images/project-icons/icons8-rocket-96.png");
+		}
 	}
 
 	&-footer img {
 		height: 50px;
 		width: 50px;
+	}
+
+	@media (min-width: 1200px) and (max-width: 1400px) {
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
@@ -124,8 +236,11 @@
 
 .chip {
 	display: inline-block;
-	border-radius: 100rem;
-	color: #fff;
+	font-size: 14px;
+	padding: 0.2em 0.6em;
+	margin-bottom: 5px;
+	border-radius: 9999999px;
+	color: $theme-color-9;
 	font-weight: bold;
 	cursor: default;
 
@@ -146,7 +261,7 @@
 	}
 
 	&__react-native {
-		background-color: #2a5dac;
+		background-color: #3572ce;
 	}
 
 	&__node {
