@@ -10,6 +10,9 @@ function showPage() {
     document.body.className = document.body.className.replace("js-loading", "");
 }
 
+// Highlighting correct navigation item
+
+
 // Contact section
 
 function hoverMail(elem) {

@@ -29,9 +29,10 @@
 
 /* Body Section */
 .section__about {
-  height: 750px;
+  height: 1300px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #f8f9fa;
 }
@@ -82,18 +83,19 @@
   content: url("../images/tech-icons/icons8-swift.svg");
 }
 .section__projects {
-  padding-top: 20px;
-  height: 550px;
+  height: 1100px;
   background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 1200px) {
   .section__projects {
-    height: 850px;
+    height: 1300px;
   }
 }
 @media (max-width: 768px) {
   .section__projects {
-    height: 1620px;
+    height: 2200px;
   }
 }
 .section__projects-container {
@@ -104,15 +106,17 @@
 .section__projects-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  color: #6c757d;
+  padding: 50px;
+  font-size: 4rem;
 }
 .section__projects-item {
   display: flex;
   justify-content: center;
 }
 .section__contact {
-  height: 370px;
+  height: 450px;
   background-color: #f8f9fa;
   display: flex;
   align-items: center;

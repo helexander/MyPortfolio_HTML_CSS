@@ -32,9 +32,10 @@
 
 .section {
 	&__about {
-		height: 750px;
+		height: 1300px;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 		background-color: $theme-color-1;
 
@@ -100,16 +101,17 @@
 	}
 
 	&__projects {
-		padding-top: 20px;
-		height: 550px;
+		height: 1100px;
 		background-color: $theme-color-2;
+		display: flex;
+		justify-content: center;
 
 		@media (max-width: 1200px) {
-			height: 850px;
+			height: 1300px;
 		}
 
 		@media (max-width: 768px) {
-			height: 1620px;
+			height: 2200px;
 		}
 		// This container should be aligning project cards to be center???
 		&-container {
@@ -121,8 +123,10 @@
 		&-header {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
 			align-items: center;
+			color: $theme-color-6;
+			padding: 50px;
+			font-size: 4rem;
 		}
 
 		&-item {
@@ -132,7 +136,7 @@
 	}
 
 	&__contact {
-		height: 370px;
+		height: 450px;
 		background-color: $theme-color-1;
 		display: flex;
 		align-items: center;
