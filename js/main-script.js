@@ -13,7 +13,8 @@ function showPage() {
 // Contact section
 
 function hoverMail(elem) {
-    elem.setAttribute('src', '../images/contact-icons/animated-mail.gif');
+    elem.addClass("section__contact-item-mail-animated").removeClass("section__contact-item-mail");
+    // elem.setAttribute('src', '../images/contact-icons/animated-mail.gif');
 }
 function unhoverMail(elem) {
     elem.setAttribute('src', '../images/contact-icons/static-mail.svg');

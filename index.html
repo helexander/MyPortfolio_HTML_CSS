@@ -267,8 +267,9 @@
 										src=""
 										alt=""
 										class="section__contact-item-mail"
-										onmouseover="hoverMail(this)"
-										onmouseout="unhoverMail(this)"
+										onmouseover="(elem) => {
+											elem.addClass('section__contact-item-mail-animated').removeClass('section__contact-item-mail')
+										}"
 									/>jeremychee97@gmail.com</a
 								>
 							</p>

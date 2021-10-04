@@ -133,6 +133,9 @@
 .section__contact-item-mail {
   content: url("../images/contact-icons/static-mail.svg");
 }
+.section__contact-item-mail-animated {
+  content: url("../images/contact-icons/animated-mail.gif");
+}
 .section__contact-item-linkedin {
   content: url("../images/contact-icons/static-linkedin.svg");
 }
@@ -155,21 +158,28 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
+.card-body {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
 .card-body-img-1 {
+  height: 70%;
+  width: 100%;
   content: url("../images/project-display/simons-game.png");
 }
 .card-body-img-2 {
-  content: url("");
+  height: 90%;
+  width: 100%;
+  content: url("../images/project-display/calc-js.png");
 }
 .card-body-img-3 {
   content: url("");
 }
 .card-body-img-4 {
+  width: 80%;
+  height: 100%;
   content: url("../images/project-display/toDo2.png");
-}
-.card-body img {
-  height: 200px;
-  width: 270px;
 }
 .card-footer {
   display: flex;
